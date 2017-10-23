@@ -17,7 +17,8 @@
     "mongojs": "^2.4.1",
     "mongoose": "^4.11.14",
     "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "ejs": "^1.0.0"
   },
   "repository": {
     "type": "git",
