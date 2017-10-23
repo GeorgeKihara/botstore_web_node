@@ -1,8 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res, next){
+var app = express();
+
+app.get('/', function(req, res, next){
     res.render('index.html');
 });
 
-module.exports = router;
+app.get('/upload', function(req, res, next){
+    res.render('upload.html');
+});
+
+module.exports = app;
