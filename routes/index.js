@@ -4,11 +4,11 @@ var router = express.Router();
 var app = express();
 
 app.get('/', function(req, res, next){
-    res.render('index.html');
+    res.render('index.ejs');
 });
 
 app.get('/upload', function(req, res, next){
-    res.render('upload.html');
+    res.render('upload.ejs');
 });
 
 module.exports = app;

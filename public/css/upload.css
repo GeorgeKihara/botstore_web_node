@@ -1,0 +1,87 @@
+body {
+    background: white;
+    color: black;
+}
+h1 {
+    text-align: center;
+}
+#searchbox {
+    position: relative;
+    margin-left: 36%;
+    width: 300px;
+    height: 40px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    border: black;
+    border-radius: 30px;
+}
+.description {
+    position: relative;
+    margin-left: 16%;
+    margin-top: 25px;
+    width: 950px;
+    height: 450px;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+#name {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+#botdption {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+}
+#boticon {
+    position: relative;
+    margin-left: 60px;
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    border: black solid 4px;
+    border-radius: 6px;
+}
+#iconlabel {
+    position: relative;
+    margin-left: 56px;
+    text-align: center;
+    font-weight: bold;
+}
+#scancode {
+    position: relative;
+    margin-left: 60px;
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    border: black solid 4px;
+    border-radius: 6px;
+}
+#scanlabel {
+    position: relative;
+    margin-left: 56px;
+    text-align: center;
+    font-weight: bold;
+}
+#category {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+#developer {
+    position: relative;
+    margin-left: 200px;
+    margin-top: -26px;
+}
+#country {
+    position: relative;
+    margin-left: 400px;
+    margin-top: -30px;
+}

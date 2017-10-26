@@ -11,25 +11,26 @@
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
+    "ejs": "^1.0.0",
     "express": "^4.15.5",
     "jade": "~1.11.0",
     "mongodb": "^2.2.31",
     "mongojs": "^2.4.1",
     "mongoose": "^4.11.14",
     "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2",
-    "ejs": "^1.0.0"
+    "request": "^2.83.0",
+    "serve-favicon": "~2.4.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeorgeKihara/botstore_web_node.git"
+    "url": "git+https://gitlab.com/cysectsol/botstore_web.git"
   },
   "author": "George",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GeorgeKihara/botstore_web_node/issues"
+    "url": "https://gitlab.com/cysectsol/botstore_web/issues"
   },
-  "homepage": "https://github.com/GeorgeKihara/botstore_web_node#readme",
+  "homepage": "https://gitlab.com/cysectsol/botstore_web.git#readme",
   "devDependencies": {
     "nodemon": "^1.12.1"
   }
