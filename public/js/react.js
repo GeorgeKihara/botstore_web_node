@@ -93,13 +93,15 @@ ReactDOM.render(
 var Bot2Component = React.createClass({
     render: function () {
         return (
-            <div></div>
+            <div>
+                <p><b>Grand Theft Auto.</b> Play GTA 5 on this bot.</p>
+            </div>
         );
     }
 });
 ReactDOM.render(
     <Bot2Component />,
-    document.getElementById('bot2')
+    document.getElementById('bot2details')
 );
 //bot3
 var Bot3Component = React.createClass({
