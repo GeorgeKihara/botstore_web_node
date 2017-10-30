@@ -107,13 +107,15 @@ ReactDOM.render(
 var Bot3Component = React.createClass({
     render: function () {
         return (
-            <div></div>
+            <div>
+                <p><b>Art Bot.</b> Find all creative art designs here.</p>
+            </div>
         );
     }
 });
 ReactDOM.render(
     <Bot3Component />,
-    document.getElementById('bot3')
+    document.getElementById('bot3details')
 );
 
 
