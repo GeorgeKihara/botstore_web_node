@@ -1,26 +1,36 @@
 /*** @jsx React.DOM */
 
 //searchbox
-var searchstyle = {
+var search = {
     width: '300px',
     height: '40px',
     boxSizing: 'border-box',
     border: '2px solid #ccc',
-    borderRadius: '4px',
-    fontSize: '16px',
-    backgroundColor: "white",
-    backgroundImage: "url('../images/searchicon.png')",
-    backgroundPosition: '10px 10px',
-    backgroundRepeat: 'no-repeat',
-    webkitTransition: 'width 0.4s ease-in-out',
-    transition: 'width 0.4s ease-in-out',
-    textAlign: 'center'
+    borderRadius: '4px'
+};
+var searchstyle = {
+    postion: 'relative',
+    width: '260px',
+    height: '30px',
+    borderStyle: 'none',
+    fontSize: '16px'
+};
+var icon = {
+    postion: 'relative',
+    marginLeft: '2px',
+    marginTop: '2px',
+    width: '30px',
+    height: '30px',
+    overflow: 'hidden'
 };
 var FormComponent = React.createClass({
     render: function () {
         return (
             <form>
+                <div style={search}>
+                <img style={icon} src="images/searchicon.png"/>
                 <input style={searchstyle} type="text" name="search" placeholder="Search for bots"/>
+                </div>
             </form>
         );
     }

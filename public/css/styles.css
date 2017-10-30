@@ -34,9 +34,39 @@ h1 {
   margin-left: 250px;
   margin-top: -395px;
 }
-#bot1, #bot2, #bot3 {
+#bot1 {
   border: black solid 3px;
   border-radius: 10px;
+  background-image: url("../images/bs.jpeg");
+  background-size: 60px;
+  background-clip: content-box;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#bot2 {
+  border: black solid 3px;
+  border-radius: 10px;
+  background-image: url("../images/gg.jpeg");
+  background-size: 60px;
+  background-clip: content-box;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#bot3 {
+  border: black solid 3px;
+  border-radius: 10px;
+  background-image: url("../images/tico.png");
+  background-size: 60px;
+  background-clip: content-box;
+  background-position: center;
   width: 50px;
   height: 50px;
   margin-left: 50px;

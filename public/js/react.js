@@ -1,27 +1,41 @@
 /*** @jsx React.DOM */
 
 //searchbox
-var searchstyle = {
+var search = {
     width: '300px',
     height: '40px',
     boxSizing: 'border-box',
     border: '2px solid #ccc',
+    borderRadius: '4px'
+};
+var searchstyle = {
+    postion: 'relative',
+    width: '260px',
+    height: '30px',
+    boxSizing: 'border-box',
+    border: '0px #ffffff',
     borderRadius: '4px',
     fontSize: '16px',
-    backgroundColor: "white",
-    backgroundImage: "url('../images/searchicon.png')",
-    backgroundPosition: '10px 10px',
-    backgroundRepeat: 'no-repeat',
     webkitTransition: 'width 0.4s ease-in-out',
-    transition: 'width 0.4s ease-in-out',
-    textAlign: 'center'
+    transition: 'width 0.4s ease-in-out'
+};
+var icon = {
+    postion: 'relative',
+    marginLeft: '2px',
+    marginTop: '2px',
+    width: '30px',
+    height: '30px',
+    overflow: 'hidden'
 };
 var FormComponent = React.createClass({
     render: function () {
         return (
             <form>
-            <input style={searchstyle} type="text" name="search" placeholder="Search for bots"/>
-        </form>
+                <div style={search}>
+                <img style={icon} src="images/searchicon.png"/>
+                <input style={searchstyle} type="text" name="search" placeholder="Search for bots"/>
+                </div>
+            </form>
         );
     }
 });
@@ -31,10 +45,14 @@ ReactDOM.render(
 );
 
 //upload button
+var buttonstyle = {
+    textDecoration: 'none',
+    fontWeight: 'bold'
+};
 var UploadComponent = React.createClass({
     render: function () {
         return (
-            <button>Upload a bot</button>
+            <button><a style={buttonstyle} href="/upload">Upload a bot</a></button>
         );
     }
 });
@@ -47,7 +65,7 @@ ReactDOM.render(
 var EditComponent = React.createClass({
     render: function () {
         return (
-            <button>Edit your bot</button>
+            <button><a style={buttonstyle} href="/upload">Edit your bot</a></button>
         );
     }
 });
@@ -57,16 +75,24 @@ ReactDOM.render(
 );
 
 //Commonly searched bots
+var bot1 = {
+    postion: 'relative',
+    height: '30px',
+    marginLeft: '100px',
+    marginTop: '-10px'
+  }
 var Bot1Component = React.createClass({
     render: function () {
-        return (
-            <div></div>
+        return ( 
+            <div style={bot1}>
+                <p>Bot Store ljdfhkjdsfhksjdhfkjsdfhkj</p>
+            </div>
         );
     }
 });
 ReactDOM.render(
     <Bot1Component />,
-    document.getElementById('bot1')
+    document.getElementById('bot')
 );
 //bot2
 var Bot2Component = React.createClass({
