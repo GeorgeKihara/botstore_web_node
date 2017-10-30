@@ -28,8 +28,8 @@ var FormComponent = React.createClass({
         return (
             <form>
                 <div style={search}>
-                <img style={icon} src="images/searchicon.png"/>
-                <input style={searchstyle} type="text" name="search" placeholder="Search for bots"/>
+                    <img style={icon} src="images/searchicon.png" />
+                    <input style={searchstyle} type="text" name="search" placeholder="Search for bots" />
                 </div>
             </form>
         );
@@ -42,7 +42,7 @@ ReactDOM.render(
 
 //Name label
 var namestyle = {
-	position: 'relative',
+    position: 'relative',
     width: '200px',
     height: '30px',
     border: 'black solid 2px',
@@ -62,7 +62,7 @@ ReactDOM.render(
 );
 //Description label
 var styles = {
-	position: 'relative',
+    position: 'relative',
     width: '200px',
     height: '80px',
     border: 'black solid 2px',
@@ -85,7 +85,7 @@ var IconComponent = React.createClass({
     render: function () {
         return (
             <div>
-                
+
             </div>
         );
     }
@@ -99,7 +99,7 @@ var ScanComponent = React.createClass({
     render: function () {
         return (
             <div>
-                
+
             </div>
         );
     }
@@ -112,7 +112,15 @@ ReactDOM.render(
 var CategoryComponent = React.createClass({
     render: function () {
         return (
-            <button>Category</button>
+            <div>
+            Category:
+            <select>
+                <option value="games">Games</option>
+                <option value="health">Health</option>
+                <option value="community">Community</option>
+                <option value="music">Music</option>
+            </select>
+            </div>
         );
     }
 });
@@ -124,7 +132,15 @@ ReactDOM.render(
 var DeveloperComponent = React.createClass({
     render: function () {
         return (
-            <button>Developer</button>
+            <div>
+            Developer:
+            <select>
+                <option value="nodejs">Node Js</option>
+                <option value="php">PHP</option>
+                <option value="python">Python</option>
+                <option value="ruby">Ruby</option>
+            </select>
+            </div>
         );
     }
 });
@@ -136,11 +152,33 @@ ReactDOM.render(
 var CountryComponent = React.createClass({
     render: function () {
         return (
-            <button>Country</button>
+            <div>
+            Country:
+            <select>
+                <option value="kenya">Kenya</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+            </select>
+            </div>
         );
     }
 });
 ReactDOM.render(
     <CountryComponent />,
     document.getElementById('country')
+);
+//uploadbot
+var UploadBotComponent = React.createClass({
+    render: function () {
+        return (
+            <form>
+                <button>Upload</button>
+            </form>
+        );
+    }
+});
+ReactDOM.render(
+    <UploadBotComponent />,
+    document.getElementById('uploadbot')
 );

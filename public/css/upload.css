@@ -77,11 +77,15 @@ h1 {
 }
 #developer {
     position: relative;
-    margin-left: 200px;
-    margin-top: -26px;
+    margin-left: 240px;
+    margin-top: -23px;
 }
 #country {
     position: relative;
-    margin-left: 400px;
-    margin-top: -30px;
+    margin-left: 440px;
+    margin-top: -23px;
 }
+#uploadbot {
+    margin-left: 600px;
+    margin-top: -200px;
+  }
