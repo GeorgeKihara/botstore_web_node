@@ -75,24 +75,19 @@ ReactDOM.render(
 );
 
 //Commonly searched bots
-var bot1 = {
-    postion: 'relative',
-    height: '30px',
-    marginLeft: '100px',
-    marginTop: '-10px'
-  }
+
 var Bot1Component = React.createClass({
     render: function () {
         return ( 
-            <div style={bot1}>
-                <p>Bot Store ljdfhkjdsfhksjdhfkjsdfhkj</p>
+            <div>
+                <p><b>Bot Store.</b> A bot to help you find other bots.</p>
             </div>
         );
     }
 });
 ReactDOM.render(
     <Bot1Component />,
-    document.getElementById('bot')
+    document.getElementById('bot1details')
 );
 //bot2
 var Bot2Component = React.createClass({
